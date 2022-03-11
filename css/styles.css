@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap');
 
 
+:root{
+    --bg-gray: #ddd;
+    --text-gray: #4a4a4a;
+    --color-primary:  #4d41c0;
+    --white: #fff;
+
+
+
+
+
+}
 *{
     margin: 0;
     box-sizing: border-box;
@@ -11,9 +22,13 @@ h1,h2,h3,h4,h5,h6{
     margin:0;
 }
 
+html body{
+    background-color: var(--bg-gray);
+}
+
 header{
-    background-color: violet;
-    color: dimgray;
+    background-color:var(--color-primary);
+    color: var(--white);
     height: 60px;
     display: flex;
     align-items: center;
@@ -34,5 +49,68 @@ nav a{
 }
 a, a:hover{
 text-decoration: none;
-    color: black;
+    color: unset
+
+}
+
+.lmovies-contact-container{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.lmovies-contact-container img{
+    margin-right: 10px;
+
+}
+
+
+#dsmovie-card-list{
+    padding: 40px 0;
+
+
+}
+
+.dsmovie-card{
+    width: 360px;
+
+}
+
+.dsmovie-card img{
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
+.dsmovie-card-description{
+    padding: 10px 0 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+    
+    background-color: var(--white);
+}
+
+.dsmovie-card-description h3{
+    font-size: 14px;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+
+}
+
+.dsmovie-btn{
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items:center ;
+    justify-content:center;
+    border-radius: 4px;
+
 }
