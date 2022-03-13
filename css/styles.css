@@ -8,6 +8,8 @@
     --red: #ff0000; 
     --white:#ffffff; 
     --light-gray: #aaa;
+    --yellow-star: #ffbb3a
+
 
 
     }
@@ -89,7 +91,7 @@ text-decoration: none;
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 
     background-color: var(--white);
 }
@@ -99,6 +101,36 @@ text-decoration: none;
     font-weight: 700;
 
     margin-bottom: 25px;
+
+
+}
+
+.dsmovie-card-description-bottom{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+
+} 
+
+.dsmovie-card-description-bottom p{
+font-size: 12px;
+font-weight: 400;
+color: var(--light-gray);
+margin-bottom: 10px;
+
+
+
+}
+
+.dsmovie-card-description-bottom h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--yellow-star);
+}
+
+.dsmovie-card-description-bottom img{
+    width: 22px;
+
 
 
 }
